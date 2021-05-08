@@ -10,7 +10,7 @@ public class Bai1b {
 			Connection con = DriverManager.getConnection("jdbc:odbc:DATA", "", "");
 			
 			Statement stmt = con.createStatement();
-			String sql = "select * from Table1";
+			String sql = "select Table1.*";
 			ResultSet rs = stmt.executeQuery(sql);
 			System.out.println("Id\t Name \t\t Add \t\t Total");
 			while (rs.next()) {
